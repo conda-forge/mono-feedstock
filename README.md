@@ -14,6 +14,18 @@ Mono is a software platform designed to allow developers to easily create cross 
 It is an open source implementation of Microsoft's .NET Framework based on the ECMA standards for C# and the Common Language Runtime.
 
 
+Current build status
+====================
+
+Linux: [![Circle CI](https://circleci.com/gh/conda-forge/mono-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/mono-feedstock)
+OSX: ![](https://cdn.rawgit.com/conda-forge/conda-smithy/90845bba35bec53edac7a16638aa4d77217a3713/conda_smithy/static/disabled.svg)
+Windows: ![](https://cdn.rawgit.com/conda-forge/conda-smithy/90845bba35bec53edac7a16638aa4d77217a3713/conda_smithy/static/disabled.svg)
+
+Current release info
+====================
+Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/mono/badges/version.svg)](https://anaconda.org/conda-forge/mono)
+Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/mono/badges/downloads.svg)](https://anaconda.org/conda-forge/mono)
+
 Installing mono
 ===============
 
@@ -69,18 +81,6 @@ Terminology
 
 **conda-forge** - the place where the feedstock and smithy live and work to
                   produce the finished article (built conda distributions)
-
-Current build status
-====================
-
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/mono-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/mono-feedstock)
-OSX: ![](https://cdn.rawgit.com/conda-forge/conda-smithy/90845bba35bec53edac7a16638aa4d77217a3713/conda_smithy/static/disabled.svg)
-Windows: ![](https://cdn.rawgit.com/conda-forge/conda-smithy/90845bba35bec53edac7a16638aa4d77217a3713/conda_smithy/static/disabled.svg)
-
-Current release info
-====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/mono/badges/version.svg)](https://anaconda.org/conda-forge/mono)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/mono/badges/downloads.svg)](https://anaconda.org/conda-forge/mono)
 
 
 Updating mono-feedstock
