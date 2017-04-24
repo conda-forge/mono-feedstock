@@ -1,6 +1,6 @@
 {% set name = "mono" %}
-{% set version = "4.6.2.6" %}
-{% set sha256 = "82cc0eb3cb6c6c90ffc68864e48a953664376e2926b8dd774603b62a3a9a5d5c" %}
+{% set version = "4.8.1.0" %}
+{% set sha256 = "18cb38a670e51609c36c687ed90ad42cfedabeffd0a2dc5f7f0c46249eb8dbef" %}
 
 package:
   name: {{ name|lower }}
