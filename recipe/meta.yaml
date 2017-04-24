@@ -24,6 +24,7 @@ requirements:
     - libtool
     - gettext
     - pkg-config
+    - cmake
 
 test:
   commands:
