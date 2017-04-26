@@ -19,7 +19,8 @@ cat <<EOF > hello.cs
 EOF
 
 ${PREFIX}/bin/mcs hello.cs
-${PREFIX}/bin/mono hello.exe | grep "Hello world"
+ls -l
+${PREFIX}/bin/mono hello.exe
 
 cat <<EOF > test.csproj
       <?xml version="1.0" encoding="utf-8"?>
