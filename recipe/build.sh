@@ -32,7 +32,7 @@ cat <<EOF > test.csproj
   <ItemGroup>
      <Compile Include="hello.cs" />
   </ItemGroup>
-  <Import Project="$(MSBuildBinPath)\\Microsoft.CSharp.targets" />
+  <Import Project="\$(MSBuildBinPath)\\Microsoft.CSharp.targets" />
 </Project>
 EOF
 
