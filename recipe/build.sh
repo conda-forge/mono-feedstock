@@ -36,5 +36,7 @@ cat <<EOF > test.csproj
 </Project>
 EOF
 
-${PREFIX}/bin/xbuild test.csproj
+cat test.csproj
+
+${PREFIX}/bin/xbuild /verbosity:diagnostic test.csproj
 
