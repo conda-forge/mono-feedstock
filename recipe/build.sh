@@ -30,7 +30,7 @@ cat <<EOF > test.csproj
      <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="#{test_name}" />
+     <Compile Include="hello.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\\Microsoft.CSharp.targets" />
 </Project>
