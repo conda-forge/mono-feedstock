@@ -15,6 +15,7 @@ build:
   number: 1
   skip: True  # [not linux]
   detect_binary_files_with_prefix: False
+  binary_relocation: False
 
 
 requirements:
