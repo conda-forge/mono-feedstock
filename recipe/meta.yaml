@@ -12,14 +12,18 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 0
+  number: 1
   skip: True  # [not linux]
+  detect_binary_files_with_prefix: False
+  binary_relocation: False
+  ignore_prefix_files: True
+  no_link:
+    - bin/
+    - lib/
+
 
 requirements:
   build:
-    - toolchain
-    - python
-    - perl
     - automake
     - libtool
     - gettext
