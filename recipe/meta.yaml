@@ -12,19 +12,21 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 0
+  number: 1
   skip: True  # [win]
 
 requirements:
   build:
-    - toolchain
-    - python
     - perl
     - automake
     - libtool
-    - gettext
     - pkg-config
     - cmake
+    - {{ compiler('c') }}
+    - {{ compiler('cxx') }}
+  host:
+    - python
+    - gettext
 
 test:
   commands:
