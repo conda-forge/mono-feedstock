@@ -1,6 +1,6 @@
 {% set name = "mono" %}
-{% set version = "4.8.1.0" %}
-{% set sha256 = "18cb38a670e51609c36c687ed90ad42cfedabeffd0a2dc5f7f0c46249eb8dbef" %}
+{% set version = "5.14.0.177" %}
+{% set sha256 = "d4f5fa2e8188d66fbc8054f4145711e45c1faa6d070e63600efab93d1d189498" %}
 
 package:
   name: {{ name|lower }}
@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 0
   skip: True  # [win]
 
 requirements:
