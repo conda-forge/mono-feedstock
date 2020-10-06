@@ -1,31 +1,33 @@
 {% set name = "mono" %}
-{% set version = "5.14.0.177" %}
-{% set sha256 = "d4f5fa2e8188d66fbc8054f4145711e45c1faa6d070e63600efab93d1d189498" %}
+{% set version = "6.12.0.90" %}
+{% set sha256 = "51de5c02ad511333f93ff585bca54c8784de35af4ff27b759d16b46c4402cdac" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.tar.bz2
-  url: http://download.mono-project.com/sources/{{ name }}/{{ name }}-{{ version }}.tar.bz2
+  url: https://download.mono-project.com/sources/mono/mono-{{ version }}.tar.xz
   sha256: {{ sha256 }}
 
 build:
-  number: 1001
-  skip: True  # [win]
+  number: 0
+  skip: true  # [win]
 
 requirements:
   build:
     - perl
-    - automake
+    - automake >=1.16
     - libtool
     - pkg-config
     - cmake
+    - autoconf
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
-  host:
     - python
+    - make       # [unix]
+  host:
+    - zlib
     - gettext
 
 test:
@@ -48,3 +50,4 @@ about:
 extra:
   recipe-maintainers:
     - bgruening
+    - wolfv
