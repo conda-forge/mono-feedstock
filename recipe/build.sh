@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-if [[ `uname` == 'Linux' ]]; then
+if [[ $target_platform =~ linux.* ]]; then
     # disable tests
     sed -i 's|tests unit-tests benchmark||g' mono/Makefile.am
 fi
