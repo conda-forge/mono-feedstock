@@ -28,7 +28,6 @@ requirements:
     - make       # [unix]
   host:
     - zlib
-    - gettext
 
 test:
   commands:
