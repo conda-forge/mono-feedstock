@@ -6,8 +6,7 @@ if [[ $target_platform =~ linux.* ]]; then
 fi
 
 ./autogen.sh               \
-    --prefix=$PREFIX       \
-    --disable-silent-rules
+    --prefix=$PREFIX
 
 make -j${CPU_COUNT}
 make install -j${CPU_COUNT}
