@@ -1,9 +1,12 @@
 #!/usr/bin/env bash
 
-./configure --prefix=$PREFIX --with-glib=embedded --enable-nls=no
+if [[ $target_platform =~ linux.* ]]; then
+    # disable tests
+    sed -i 's|tests unit-tests benchmark||g' mono/Makefile.am
+fi
 
-make -j 4
-# This check fails due to one test.
-# Known upstream https://github.com/mono/mono/blame/a1ac272ffe8d6b54bc9f9ebe1331699d1b623507/mono/tests/Makefile.am#L603-L604
-#make check
-make install
+./autogen.sh               \
+    --prefix=$PREFIX
+
+make -j${CPU_COUNT}
+make install -j${CPU_COUNT}
