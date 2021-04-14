@@ -5,6 +5,9 @@ if [[ $target_platform =~ linux.* ]]; then
     sed -i 's|tests unit-tests benchmark||g' mono/Makefile.am
 fi
 
+cp $BUILD_PREFIX/share/gnuconfig/config.guess config.guess
+cp $BUILD_PREFIX/share/gnuconfig/config.sub config.sub
+
 ./autogen.sh               \
     --prefix=$PREFIX
 

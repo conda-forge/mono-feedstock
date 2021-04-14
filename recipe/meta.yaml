@@ -16,12 +16,13 @@ build:
 
 requirements:
   build:
-    - perl
+    - perl 5.32.0
     - automake >=1.16
     - libtool
     - pkg-config
     - cmake
     - autoconf
+    - gnuconfig
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
     - python
