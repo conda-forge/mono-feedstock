@@ -1,6 +1,6 @@
 {% set name = "mono" %}
-{% set version = "6.12.0.90" %}
-{% set sha256 = "51de5c02ad511333f93ff585bca54c8784de35af4ff27b759d16b46c4402cdac" %}
+{% set version = "6.12.0.122" %}
+{% set sha256 = "29c277660fc5e7513107aee1cbf8c5057c9370a4cdfeda2fc781be6986d89d23" %}
 
 package:
   name: {{ name|lower }}
@@ -16,12 +16,13 @@ build:
 
 requirements:
   build:
-    - perl
+    - perl 5.32.0
     - automake >=1.16
     - libtool
     - pkg-config
     - cmake
     - autoconf
+    - gnuconfig
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
     - python
