@@ -22,12 +22,12 @@ requirements:
     - pkg-config
     - cmake
     - autoconf
-    - {{ compiler('c') }}
-    - {{ compiler('cxx') }}
+    - {{ compiler('c') }} >=12.2.0
+    - {{ compiler('cxx') }} >=12.2.0
     - python
     - make       # [unix]
   host:
-    - zlib
+    - zlib >=1.3.2
 
 test:
   commands:
