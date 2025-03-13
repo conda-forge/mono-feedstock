@@ -24,6 +24,7 @@ requirements:
     - autoconf
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
+    - {{ stdlib('c') }}
     - python
     - make       # [unix]
   host:
