@@ -6,7 +6,8 @@ if [[ $target_platform =~ linux.* ]]; then
 fi
 
 ./autogen.sh --prefix=$PREFIX
-autoupdate
+# autoupdate
 
+export CMAKE_POLICY_VERSION_MINIMUM=3.5
 make -j${CPU_COUNT}
 make install -j${CPU_COUNT}
