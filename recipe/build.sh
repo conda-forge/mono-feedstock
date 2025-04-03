@@ -5,8 +5,8 @@ if [[ $target_platform =~ linux.* ]]; then
     sed -i 's|tests unit-tests benchmark||g' mono/Makefile.am
 fi
 
-./autogen.sh               \
-    --prefix=$PREFIX
+./autogen.sh --prefix=$PREFIX
+autoupdate
 
 make -j${CPU_COUNT}
 make install -j${CPU_COUNT}
