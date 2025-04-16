@@ -1,14 +1,12 @@
-{% set name = "mono" %}
-{% set version = "6.12.0.90" %}
-{% set sha256 = "51de5c02ad511333f93ff585bca54c8784de35af4ff27b759d16b46c4402cdac" %}
+{% set version = "6.12.0.199" %}
 
 package:
-  name: {{ name|lower }}
+  name: mono
   version: {{ version }}
 
 source:
   url: https://download.mono-project.com/sources/mono/mono-{{ version }}.tar.xz
-  sha256: {{ sha256 }}
+  sha256: c0850d545353a6ba2238d45f0914490c6a14a0017f151d3905b558f033478ef5
 
 build:
   number: 0
@@ -22,6 +20,7 @@ requirements:
     - pkg-config
     - cmake
     - autoconf
+    - {{ stdlib('c') }}
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
     - python
@@ -50,3 +49,4 @@ extra:
   recipe-maintainers:
     - bgruening
     - wolfv
+    - hmaarrfk  # happy to help review and merge other's PRs.
