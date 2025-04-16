@@ -49,3 +49,4 @@ extra:
   recipe-maintainers:
     - bgruening
     - wolfv
+    - hmaarrfk  # happy to help review and merge other's PRs.
