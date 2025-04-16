@@ -186,5 +186,6 @@ Feedstock Maintainers
 =====================
 
 * [@bgruening](https://github.com/bgruening/)
+* [@hmaarrfk](https://github.com/hmaarrfk/)
 * [@wolfv](https://github.com/wolfv/)
 
